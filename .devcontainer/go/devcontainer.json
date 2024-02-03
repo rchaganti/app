@@ -1,0 +1,19 @@
+{
+    "name": "app",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "features": {
+        "ghcr.io/devcontainers/features/go:1": {}
+    },
+    "service": "app",
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace/src",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-vscode.Go"
+            ]
+        }
+    }
+}
